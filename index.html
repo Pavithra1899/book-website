@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <navbar>   
+             <h1>Welcome to Book store</h1>
+        </navbar>
+    </div>
+    <div class="header">
+        Kuddos! You can add your Book Info here... We will be helping selling it.
+    </div>
+    <div class="container">
+        <div class="bkcontainer">
+        <h1>Newman and His Contemporaries</h1>
+        <h3>By Edward Short</h3>
+        <p>"Newman and His Contemporaries" by Edward Short provides a compelling overview of Hollywood's golden age. Delving into the lives of Paul Newman, Marlon Brando, and James Dean, Short offers insights into their impact on cinema. Through vivid narratives, the book chronicles their rise as iconic figures, shaping the landscape of entertainment.</p>
+        <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="popup">
+        <form>
+            <label>Book Title:<input id="bookname"></label>
+            <label>Author Name:<input id="bookauthor"></label>
+            <label>Description of the Book:<input id="bookdescription"></label>
+            <button id="new">Save</button>
+            <button id="close">Cancel</button>
+        </form>
+    </div>
+    <div class="round">
+       <div class="plus" id ="add-popup">+</div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
